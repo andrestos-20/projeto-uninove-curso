@@ -1,0 +1,4 @@
+Dockerfile criado para servir o site com Nginx.
+netlify.toml criado (publicação da pasta atual).
+vercel.json criado para deploy estático.
+README_DEPLOY.md criado com instruções de deploy.
