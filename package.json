@@ -5,15 +5,12 @@ Latest content with line numbers:
 3	  "version": "1.0.0",
 4	  "type": "module",
 5	  "license": "MIT",
-6	  "scripts": {
-7	    "dev": "NODE_ENV=development tsx watch server/_core/index.ts",
-8	    "build": "vite build && esbuild server/_core/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist",
-9	    "start": "NODE_ENV=production node dist/index.js",
-10	    "check": "tsc --noEmit",
-11	    "format": "prettier --write .",
-12	    "test": "vitest run",
-13	    "db:push": "drizzle-kit generate && drizzle-kit migrate"
-14	  },
+    "scripts": {
+      "dev": "vite",
+      "build": "vite build",
+      "preview": "vite preview --port 5173",
+      "postinstall": "pnpm approve-builds"
+    },
 15	  "dependencies": {
 16	    "@aws-sdk/client-s3": "^3.693.0",
 17	    "@aws-sdk/s3-request-presigner": "^3.693.0",
