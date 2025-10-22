@@ -29,14 +29,11 @@ export default defineConfig(({ mode }): UserConfig => {
       },
     },
     envDir: path.resolve(__dirname),
+    root: path.resolve(__dirname),
+    publicDir: path.resolve(__dirname),
     build: {
       outDir: path.resolve(__dirname, "dist/public"),
       emptyOutDir: true,
-      rollupOptions: {
-        input: {
-          main: path.resolve(__dirname, 'index.html')
-        }
-      }
     },
     server: {
       host: true,
